@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+    <title>Lab 1</title>
+
+    <script src="external/jquery/jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+     crossorigin="anonymous">
+	 <link href="style.css" rel="stylesheet">
+    <script src="scripts.js"></script>	
+</head>
+<body id="full">
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			change color
+			</button>
+		</p>
+		<div class="collapse" id="collapseExample">
+		<form method="post" action="">
+				<label for="bg">Background:</label> 
+				<input type="color" class="theme" id="bg"/>
+			<hr />
+			</form>
+		 </div>
+
+<div class="container">
+	<div class="row text-center mx-5 mz-5">
+		<div class="col-md-6">
+				<form method="post" action="">
+						<label for="bg">Background:</label> 
+						<input type="color" class="theme" id="bg"/>
+					<hr />
+					</form>
+		</div>
+<div class="col-md-6">
+		<button id="addCol" class="btn btn-warning"> Add Columns</button>
+		<hr />
+</div>
+	</div>
+<div id="columns" class="row pt-3">
+	<div id="todo"  class="col mx-3 text-center droppable todo ">
+		<p><span>To do:</span>
+			<span class="doing-counter">   </span><br/>
+			<button id="newTask" class="btn btn-primary"> Create new Task</button>
+		<!-- <div class="ui-widget-content draggable">
+			<p>Note 1</p>
+			<div class="tabs">
+				<ul>
+					<li><a href="#tabs-1">Devs</a></li>
+					<li><a href="#tabs-2">Task</a></li>
+					<li><a href="#tabs-3">Deadline</a></li>
+				  </ul>
+				  <div id="tabs-1">
+					<p> Lorem morem corem</p>			
+				</div>
+				<div id="tabs-2">
+				  <p>Uppgit Kuppfigt medamift</p>
+				</div>
+				<div id="tabs-3">
+						<input type="text" class="datepicker"></input>
+				</div>
+			</div>
+
+		</div>
+		<div class="ui-widget-content draggable ">
+			<p>Note 2</p>
+			<div class="tabs">
+				<ul>
+					<li><a href="#tabs-1">Devs</a></li>
+					<li><a href="#tabs-2">Task</a></li>
+					<li><a href="#tabs-3">Deadline</a></li>
+				  </ul>
+				  <div id="tabs-1">
+					<p> Lorem morem corem</p>			
+				</div>
+				<div id="tabs-2">
+				  <p>Uppgit Kuppfigt medamift</p>
+				</div>
+				<div id="tabs-3">
+						<input type="text" class="datepicker"></input>
+				</div>
+			</div>
+		</div>
+		<div class="ui-widget-content draggable ">
+			<p>Note 3</p>
+			<div class="tabs">
+				<ul>
+					<li><a href="#tabs-1">Devs</a></li>
+					<li><a href="#tabs-2">Task</a></li>
+					<li><a href="#tabs-3">Deadline</a></li>
+				  </ul>
+				  <div id="tabs-1">
+					<p> Lorem morem corem</p>			
+				</div>
+				<div id="tabs-2">
+				  <p>Uppgit Kuppfigt medamift</p>
+				</div>
+				<div id="tabs-3">
+						<input type="text" class="datepicker"></input>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<div  class="col droppable doing">
+		<p><span>Doing:</span> <span class="doing-counter"> </span></p>
+	</div>
+	<div  class="col mx-3 droppable done">
+		<p><span>Done:</span> <span class="doing-counter"> </span></p>
+	</div>
+</div>
+<div class="row">
+		<div id="archiveCol"  class="col mt-3 mx-3 droppable">
+				<p><span>Archive:</span> <span class="doing-counter"> </span></p>
+			</div>
+</div>
+</div>
+<div  class="col mx-3 droppable colTemplate" style="display:none;">
+		<p><span>Added col:</span> <span class="doing-counter"> </span></p>
+	</div>
+<div class="ui-widget-content template draggable" style="display:none;">
+		<p id="number">Note <button class="btn btn-danger archive" > send to archive</button></p>
+				<form method="post" action="">
+						<label for="taskBg"></label> 
+						<input type="color" class="theme taskBg" />
+					</form>
+		
+		<div class="tabs">
+			<ul>
+				<li><a href="#tabs-1">Devs</a></li>
+				<li><a href="#tabs-2">Task</a></li>
+				<li><a href="#tabs-3">Deadline</a></li>
+			  </ul>
+			  <div id="tabs-1">
+				<p> Lorem morem corem</p>			
+			</div>
+			<div id="tabs-2">
+			  <p>Uppgit Kuppfigt medamift</p>
+			</div>
+			<div id="tabs-3">
+					<input type="text" class="datepicker"></input>
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
